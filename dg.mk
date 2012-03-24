@@ -1,15 +1,15 @@
 # Release name
 PRODUCT_RELEASE_NAME := XOOM-LTE
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_tablet_wifionly.mk)
+# Inherit some common DG stuff.
+$(call inherit-product, vendor/dg/config/common_full_tablet_wifionly.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/moto/stingray/full_stingray.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := stingray
-PRODUCT_NAME := cm_stingray
+PRODUCT_NAME := dg_stingray
 PRODUCT_BRAND := verizon
 PRODUCT_MODEL := Xoom
 PRODUCT_MANUFACTURER := Motorola
